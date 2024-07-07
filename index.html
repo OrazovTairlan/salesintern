@@ -377,7 +377,7 @@
 
         async function submitData(data) {
             try {
-                await new Promise(r => setTimeout(r, 20000));
+                await new Promise(r => setTimeout(r, 2000));
                 const response = await fetch(`https://api.pipedrive.com/v1/deals?api_token=${token}`, {
                     method: 'POST',
                     headers: {
